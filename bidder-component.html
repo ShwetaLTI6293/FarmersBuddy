@@ -1,108 +1,60 @@
 <div class="container">
     <form #mform="ngForm" (ngSubmit)="add(mform)" class="form table-responsive">
-        
-        
-                <label for = "fullName">Full Name:  </label>
-                <input type = "text" id = "fullName" class = "form-control" placeholder = "Enter Full Name " ng-model = "bidder.fullName">
-         <br><br>
-                <label for = "contactNo">Contact Number:  </label>
-                <input type = "text" id = "contactNo" class = "form-control" placeholder = "Enter Contact No " ng-model = "bidder.contactNo">
-                <br><br>
-                <label for = "emailId">Email Id:  </label>
-                <input type = "text" id = "emailId" class = "form-control" placeholder = "Enter Email ID " ng-model = "bidder.emailId">
-                <br><br>
-                <label for = "address">Address:  </label>
-                <input type = "text" id = "address" class = "form-control" placeholder = "Enter Address " ng-model = "bidder.address">
-                <br><br>
-                <label for = "state">State:  </label>
-                <input type = "text" id = "state" class = "form-control" placeholder = "Enter State " ng-model = "bidder.state">
-                <br><br>
-                
-                <label for = "city">City:  </label>
-                <input type = "text" id = "city" class = "form-control" placeholder = "Enter City " ng-model = "bidder.city">
-                <br><br>
-                <label for = "pincode">Pincode:  </label>
-                <input type = "text" id = "pincode" class = "form-control" placeholder = "Enter Pincode " ng-model = "bidder.pincode">
-                <br><br>
-                <label for = "accountNo">Account Number:  </label>
-                <input type = "text" id = "accountNo" class = "form-control" placeholder = "Enter Account No " ng-model = "bidder.accountNo">
-                <br><br>
-                <label for = "ifscCode">IFSC Code:  </label>
-                <input type = "text" id = "ifscCode" class = "form-control" placeholder = "Enter IFSC Code " ng-model = "bidder.ifscCode">
-                <br><br>
-                <label for = "aadhar">Aadhar :  </label>
-                <input type = "file" id = "aadhar" class = "form-control" ng-model = "bidder.aadhar">
-                <br><br>
-                <label for = "pan">PAN:  </label>
-                <input type = "file" id = "pan" class = "form-control" ng-model="pan">
-                <br><br>
-                
-                <label for = "traderLicense">Trader License:  </label>
-                <input type = "file" id = "traderLicense" class = "form-control" ng-model="traderLicense">
-                <br>
-                <br>
-                <label for = "password">Password:  </label>
-                <input type = "text" id = "password" class = "form-control" placeholder = "Enter Password " ng-model = "bidder.password">
-                <br>
-                
-                
-                <br><label for = "confirmPassword">Confirm Password:  </label>
-                <input type = "text" id = "confirmPassword" class = "form-control" placeholder = "Enter Password again " ng-model = "bidder.confirmPassword">
-                <br />
-                <br>
-                <br>
-                <button type="submit" value="Add" class="registerbtn">Register</button>
-         
-         
-         
-         
-         
-         
-         
-         
-         
-
-
-        <!-- <table>
+            <table class="table table-striped table-bordered" style="font-family: Roboto" text-align=center>
+      
+        <tbody>
             <tr>
-               <tr><b>Full Name:</b><td><input [(ngModel)]="bidder.fullName" name="fullName" /></td></tr><br>
-                <th><b>Contact No:</b></th>
-                <th><b>Email Id:</b></th>
-                <th><b>Address:</b></th>
-                <th><b>City:</b></th>
-                <th><b>State:</b></th>
-                <th><b>Pincode:</b></th>
-                <th><b>Account Number:</b></th>
-                <th><b>IFSC Code:</b></th>
-                <th><b>Aadhar Number:</b></th>
-                <th><b>Pan number:</b></th>
-                <th><b>Trader License:</b></th>
-                <th><b>Password:</b></th>
-                <th><b>Confirm Password:</b></th>
-            </thead>
-            <tbody>
+                    <th><b>Full Name</b></th>
+                <td><input [(ngModel)]="bidder.fullName" placeholder="Enter Full Name" name="fullName" required/></td>
+            </tr>
+            <tr>
+                    <th><b>Contact Number</b></th>
+                <td><input [(ngModel)]="bidder.contactNo" placeholder="Enter Contact No" name="contactNo" required /></td>
+            </tr>
+            <tr>
+                    <th><b>Email Id</b></th>
+                 <td><input [(ngModel)]="bidder.emailId" placeholder="Enter Email Id" name="emailId" required/></td></tr>
+                 <tr>
+                        <th><b>Address</b></th>
+                <td><input [(ngModel)]="bidder.address" placeholder="Enter Address" name="address" required/></td></tr>
                 <tr>
-                   
-                    <td><input [(ngModel)]="bidder.contactNo" name="contactNo" /></td>
-                    <td><input [(ngModel)]="bidder.emailId" name="emailId" /></td>
-                    <td><input [(ngModel)]="bidder.address" name="address" /></td>
-                    <td><input [(ngModel)]="bidder.city" name="city" /></td>
-                    <td><input [(ngModel)]="bidder.state" name="state" /></td>
-                    <td><input [(ngModel)]="bidder.pincode" name="pincode" /></td>
-                    <td><input [(ngModel)]="bidder.accountNo" name="accountNo" /></td>
-                    <td><input [(ngModel)]="bidder.ifscCode" name="ifscCode" /></td>
-                    <td><input [(ngModel)]="bidder.aadhar" name="aadhar" /></td>
-                    <td><input [(ngModel)]="bidder.pan" name="pan" /></td>
-                    <td><input [(ngModel)]="bidder.traderLicense" name="traderLicense" /></td>
-                    <td><input [(ngModel)]="bidder.password" name="password" /></td>
-                    <td><input [(ngModel)]="bidder.confirmPassword" name="confirmPassword" /></td>
-                    
+                        <th><b>State</b></th>
+                <td><input [(ngModel)]="bidder.state" placeholder="Enter State" name="state" required/></td></tr>
+                <tr>
+                        <th><b>City</b></th>
+                <td><input [(ngModel)]="bidder.city" placeholder="Enter City" name="city" required/></td></tr>
+                <tr>
+                        <th><b>Pincode</b></th>
+                <td><input [(ngModel)]="bidder.pincode" placeholder="Enter Pincode" name="pincode" required/></td></tr>
+                <tr>
+                        <th><b>Account Number</b></th>
+                <td><input [(ngModel)]="bidder.accountNo" placeholder="Enter Account No" name="accountNo" required/></td></tr>
+                <tr>
+                        <th><b>IFSC code</b></th>
+                <td><input [(ngModel)]="bidder.ifscCode" placeholder="Enter IFSC code" name="ifscCode" required/></td></tr>
+                <tr>
+                        <th><b>Aadhar</b></th>
+                <td><input [(ngModel)]="bidder.aadhar" name="aadhar" type="file" /></td></tr>
+                <tr>
+                        <th><b>PAN</b></th>
+                <td><input [(ngModel)]="bidder.pan" name="pan" type="file" /></td></tr>
+                <tr>
+                        <th><b>Trader License</b></th>
+                <td><input [(ngModel)]="bidder.traderLicense" name="traderLicense" type="file" /></td></tr>
+                <tr>
+                        <th><b>Password</b></th>
+                <td><input [(ngModel)]="bidder.password" placeholder="Enter password" name="password" type="password" required/></td></tr>
+                <tr>
+                        <th><b>Confirm Password</b></th>
+                <td><input [(ngModel)]="bidder.confirmPassword" placeholder="Enter password again" name="confirmPassword" type="password" required /></td>
                 </tr>
-                <tr>
-					<td><input type="submit" value="Add" class="btn btn-md btn-default" /> </td>
-				</tr>
-            </tbody>
-        </table>
-    --> </form>
+            <tr>
+                <td><input type="submit" value="Add" class="btn btn-md btn-default" />
+                <button type="reset" value="Reset">Reset</button> </td>
+            </tr>
+        </tbody>
+    </table>
+</form>
 </div>
-<h3 class="text-center"> {{ response }} </h3>
+<h3 class="text-center"> {{ response }} </h3>   
+        

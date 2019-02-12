@@ -1,0 +1,23 @@
+<div class="container">
+        <form #mform="ngForm" (ngSubmit)="add(mform)" class="form table-responsive">
+                
+                <table class="table table-striped table-bordered" style="font-family: Roboto">
+           <thead>
+                <th><b>Enter Email Id:</b></th>
+                <th><b>Enter Password:</b></th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><input [(ngModel)]="farmerlogin.email" placeholder="Enter Email Id" name="email" required/></td>
+                    <td><input [(ngModel)]="farmerlogin.password" placeholder="Enter Password" name="password" required/></td>
+                    <tr>
+                            <td><input type="submit" value="Login" class="btn btn-md btn-default" />
+                                
+                            
+                        </tr>
+                    </tbody>
+                </table>
+            </form>
+            </div>
+            <h3 class="text-center"> {{ response }} </h3>   
+                    

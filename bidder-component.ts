@@ -13,13 +13,15 @@ export class BidderComponent{
     constructor(private ms: BidderService){
 
     }
-    add(mform){
+   add(mform){
         this.ms.sendToServer(this.bidder).subscribe(
             data => {
                 //Take the response from server and storing in string variable
                 this.response = data['status'];
             }
         );
-    }
+    } 
+
+   
 
 }
